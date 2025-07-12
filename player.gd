@@ -2,7 +2,7 @@ extends RigidBody3D
 
 ## The vertical force applied to the object when moving upwards,
 ## controlling the strength of the thrust.
-@export_range(750.0, 3000.0) var thrust: float = 1000.0
+@export_range(750.0, 3000.0, 1.0) var thrust: float = 1000.0
 ## The rotational force applied to the object,
 ## controlling how quickly it rotates or turns.
 @export var torque_thrust: float = 100.0
@@ -22,7 +22,17 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node) -> void:
 	if "Goal" in body.get_groups():
-		print("You win!")
+		call_deferred("complete_level")
 
 	if "Hazard" in body.get_groups():
-		print("You crashed!")
+		call_deferred("crash_sequence")
+
+
+func complete_level() -> void:
+	print("Level Complete!")
+	get_tree().quit()
+
+
+func crash_sequence() -> void:
+	print("KABOOM!")
+	get_tree().reload_current_scene()
