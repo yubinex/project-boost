@@ -11,8 +11,14 @@ config_version=5
 [application]
 
 config/name="project-boost"
+run/main_scene="uid://bs1f2gri5g8rf"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[global_group]
+
+Goal=""
+Hazard=""
 
 [input]
 
