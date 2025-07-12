@@ -1,7 +1,8 @@
 extends RigidBody3D
 
-## How much vertical force to apply when moving.
-@export_range(750.0, 3000.0) var thrust: float = 1000.0 
+## The vertical force applied to the object when moving upwards, controlling the strength of the thrust.
+@export_range(750.0, 3000.0) var thrust: float = 1000.0
+## The rotational force applied to the object, controlling how quickly it rotates or turns.
 @export var torque_thrust: float = 100.0
 
 
