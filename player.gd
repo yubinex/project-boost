@@ -1,5 +1,6 @@
 extends RigidBody3D
 
+
 ## The vertical force applied to the object when moving upwards,
 ## controlling the strength of the thrust.
 @export_range(750.0, 3000.0, 1.0) var thrust: float = 1000.0
