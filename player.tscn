@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://c8bpfapruyiv6"]
+[gd_scene load_steps=7 format=3 uid="uid://c8bpfapruyiv6"]
 
 [ext_resource type="Script" uid="uid://bfo6u7c5xl0j7" path="res://player.gd" id="1_4flbx"]
-[ext_resource type="AudioStream" uid="uid://cqlrmm67blscd" path="res://sfx_death_explosion.ogg" id="2_onrkg"]
-[ext_resource type="AudioStream" uid="uid://dbb34yxul44jl" path="res://sfx_success.ogg" id="3_i3pqv"]
+[ext_resource type="AudioStream" uid="uid://cqlrmm67blscd" path="res://audio/sfx_death_explosion.ogg" id="2_onrkg"]
+[ext_resource type="AudioStream" uid="uid://dbb34yxul44jl" path="res://audio/sfx_success.ogg" id="3_i3pqv"]
+[ext_resource type="AudioStream" uid="uid://w78f1lums22p" path="res://audio/sfx_main_engine_thrust.ogg" id="4_hqtel"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_hqtel"]
 
@@ -29,5 +30,8 @@ stream = ExtResource("2_onrkg")
 
 [node name="SuccessAudio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_i3pqv")
+
+[node name="RocketAudio" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_hqtel")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
