@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://bs1f2gri5g8rf"]
 
-[ext_resource type="Script" uid="uid://bsq44rw87uyxo" path="res://level/landing_pad.gd" id="1_5gx2l"]
-[ext_resource type="PackedScene" uid="uid://c8bpfapruyiv6" path="res://player.tscn" id="1_7lnir"]
+[ext_resource type="Script" uid="uid://bsq44rw87uyxo" path="res://level/landing_pad.gd" id="1_lx8gb"]
+[ext_resource type="PackedScene" uid="uid://c8bpfapruyiv6" path="res://player.tscn" id="2_moo38"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yy828"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -51,11 +51,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.2, 0)
 use_collision = true
 size = Vector3(2, 0.4, 2)
 material = SubResource("StandardMaterial3D_ktfr2")
-script = ExtResource("1_5gx2l")
+script = ExtResource("1_lx8gb")
 file_path = "uid://doewy20lgj6sr"
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.978148, 0.207912, 0, -0.207912, 0.978148, 0, 3, 8)
 
-[node name="Player" parent="." instance=ExtResource("1_7lnir")]
+[node name="Player" parent="." instance=ExtResource("2_moo38")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1.5, 0)
