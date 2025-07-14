@@ -15,8 +15,8 @@ var is_transitioning: bool = false
 @onready var rocket_audio: AudioStreamPlayer3D = $RocketAudio
 
 @onready var booster_particles: GPUParticles3D = $BoosterParticles
-@onready var booster_particles_left: GPUParticles3D = $BoosterParticlesLeft
-@onready var booster_particles_right: GPUParticles3D = $BoosterParticlesRight
+@onready var booster_particles_left: GPUParticles3D = $Body/LeftArm/BoosterParticlesLeft
+@onready var booster_particles_right: GPUParticles3D = $Body/RightArm/BoosterParticlesRight
 @onready var explosion_particles: GPUParticles3D = $ExplosionParticles
 @onready var success_particles: GPUParticles3D = $SuccessParticles
 
