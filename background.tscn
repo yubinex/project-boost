@@ -1,0 +1,84 @@
+[gd_scene load_steps=2 format=3 uid="uid://batr865qw2wer"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qohg2"]
+albedo_color = Color(0.4, 0.270588, 0.176471, 1)
+
+[node name="Floor" type="CSGBox3D" groups=["Hazard"]]
+use_collision = true
+size = Vector3(30, 8, 5)
+material = SubResource("StandardMaterial3D_qohg2")
+
+[node name="Wall" type="CSGBox3D" parent="."]
+transform = Transform3D(0.961315, -0.275453, 0, 0.275453, 0.961315, 0, 0, 0, 1, -12.547, 4.96744, 0)
+size = Vector3(4, 10, 4)
+material = SubResource("StandardMaterial3D_qohg2")
+
+[node name="Wall2" type="CSGBox3D" parent="."]
+transform = Transform3D(0.731258, 0.682101, 0, -0.682101, 0.731258, 0, 0, 0, 1, -12.547, 12.6759, 0)
+size = Vector3(4, 10, 4)
+material = SubResource("StandardMaterial3D_qohg2")
+
+[node name="Wall3" type="CSGBox3D" parent="."]
+transform = Transform3D(0.930181, 0.367102, 0, -0.367102, 0.930181, 0, 0, 0, 1, 13.0403, 6.78489, 0)
+size = Vector3(4, 10, 4)
+material = SubResource("StandardMaterial3D_qohg2")
+
+[node name="Wall4" type="CSGBox3D" parent="."]
+transform = Transform3D(0.754194, -0.656652, 0, 0.656652, 0.754194, 0, 0, 0, 1, 12.4687, 12.9779, 0)
+size = Vector3(4, 10, 4)
+material = SubResource("StandardMaterial3D_qohg2")
+
+[node name="Ceiling" type="CSGBox3D" parent="."]
+transform = Transform3D(-0.474426, 0.880295, 0, -0.880295, -0.474426, 0, 0, 0, 1, -7.25812, 16.4949, 0)
+size = Vector3(4, 10, 4)
+material = SubResource("StandardMaterial3D_qohg2")
+
+[node name="Ceiling2" type="CSGBox3D" parent="."]
+transform = Transform3D(-0.318033, 0.94808, 0, -0.94808, -0.318033, 0, 0, 0, 1, -1.0706, 15.8837, 0)
+size = Vector3(4, 10, 4)
+material = SubResource("StandardMaterial3D_qohg2")
+
+[node name="Ceiling3" type="CSGBox3D" parent="."]
+transform = Transform3D(0.373765, 0.927523, 0, -0.927523, 0.373765, 0, 0, 0, 1, 5.60701, 16.5555, 0)
+size = Vector3(4, 10, 4)
+material = SubResource("StandardMaterial3D_qohg2")
+
+[node name="BackgroundRock" type="CSGBox3D" parent="."]
+transform = Transform3D(0.873202, -0.368694, -0.318721, 0.377827, 0.925209, -0.035139, 0.307839, -0.0897379, 0.947197, -10.938, 4.96744, -6.21717)
+size = Vector3(4, 10, 4)
+material = SubResource("StandardMaterial3D_qohg2")
+
+[node name="BackgroundRock8" type="CSGBox3D" parent="."]
+transform = Transform3D(0.372707, -0.186724, -0.908968, 0.377827, 0.925209, -0.035139, 0.847547, -0.330336, 0.415381, -5.78237, 2.31032, -6.21717)
+size = Vector3(4, 10, 4)
+material = SubResource("StandardMaterial3D_qohg2")
+
+[node name="BackgroundRock2" type="CSGBox3D" parent="."]
+transform = Transform3D(0.68336, -0.671841, -0.285743, 0.662008, 0.73524, -0.145496, 0.307839, -0.0897379, 0.947197, 4.64952, 4.54045, -6.21717)
+size = Vector3(4, 10, 4)
+material = SubResource("StandardMaterial3D_qohg2")
+
+[node name="BackgroundRock3" type="CSGBox3D" parent="."]
+transform = Transform3D(0.26815, -0.413617, -0.870067, 0.662008, 0.73524, -0.145496, 0.699887, -0.536976, 0.470972, 9.21061, 4.54045, -6.21717)
+size = Vector3(4, 10, 4)
+material = SubResource("StandardMaterial3D_qohg2")
+
+[node name="BackgroundRock4" type="CSGBox3D" parent="."]
+transform = Transform3D(0.845622, 0.482091, -0.229154, -0.436071, 0.871514, 0.224291, 0.307839, -0.0897379, 0.947197, 11.28, 15.3035, -6.21717)
+size = Vector3(4, 10, 4)
+material = SubResource("StandardMaterial3D_qohg2")
+
+[node name="BackgroundRock5" type="CSGBox3D" parent="."]
+transform = Transform3D(0.805422, 0.266792, 0.529262, -0.436071, 0.871514, 0.224291, -0.40142, -0.411444, 0.818276, -1.24995, 13.8445, -6.21717)
+size = Vector3(4, 10, 4)
+material = SubResource("StandardMaterial3D_qohg2")
+
+[node name="BackgroundRock6" type="CSGBox3D" parent="."]
+transform = Transform3D(0.864644, -0.464908, 0.190402, 0.302083, 0.783948, 0.542376, -0.40142, -0.411444, 0.818276, -5.43999, 16.147, -4.74236)
+size = Vector3(4, 10, 4)
+material = SubResource("StandardMaterial3D_qohg2")
+
+[node name="BackgroundRock7" type="CSGBox3D" parent="."]
+transform = Transform3D(0.864644, -0.464908, 0.190402, 0.499557, 0.835798, -0.227783, -0.0532397, 0.292068, 0.954915, -11.3554, 15.6461, -4.38343)
+size = Vector3(4, 10, 4)
+material = SubResource("StandardMaterial3D_qohg2")
